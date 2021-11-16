@@ -12,6 +12,10 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 autotests = true
 
+[lib]
+crate-type = ["cdylib"]
+bench = false
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
